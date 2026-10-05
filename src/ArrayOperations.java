@@ -8,7 +8,10 @@ public class ArrayOperations {
     public boolean isFull() { return size >= CAPACITY; }
     public boolean isEmpty() { return size == 0; }
     public int size() { return size; }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 46c000a2b89089321baede3e3a8f9f63c9f58f79
     public boolean insert(int value) {
         if (isFull()) return false;
         data[size++] = value;
