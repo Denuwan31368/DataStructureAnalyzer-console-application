@@ -4,7 +4,7 @@ public class SearchOperations {
 
     public static class SearchResult {
         public final int index;   
-        public final int steps;   
+        public final int steps;  
         public SearchResult(int index, int steps) {
             this.index = index;
             this.steps = steps;
