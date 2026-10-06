@@ -6,6 +6,7 @@ public class QueueOperations {
         Node(int data) { this.data = data; }
     }
 
+    
     private Node front, rear;
     private int size;
 
