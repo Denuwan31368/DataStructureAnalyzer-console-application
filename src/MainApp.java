@@ -10,7 +10,7 @@ public class MainApp {
     private static final StackOperations stackOps = new StackOperations();         
     private static final QueueOperations queueOps = new QueueOperations(); 
     private static final LinkedListOperations listOps = new LinkedListOperations();  // Sithum
-    private static final GraphOperations graphOps = new GraphOperations();           // Eranga
+    private static final GraphOperations graphOps = new GraphOperations();         
     private static final PerformanceComparison performance = new PerformanceComparison(); 
 
     public static void main(String[] args) {
@@ -294,10 +294,6 @@ public class MainApp {
             if (choice != 5) pause();
         } while (choice != 5);
     }
-
-    // ============================================================
-    // Eranga PART: Graph Operations (menu 6)
-    // ============================================================
 
     private static void graphMenu() {
         int choice;
