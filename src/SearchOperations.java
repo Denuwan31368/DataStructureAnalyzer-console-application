@@ -11,6 +11,7 @@ public class SearchOperations {
             this.steps = steps;
         }
     }
+    
     public SearchResult linearSearch(int[] arr, int target) {
         int steps = 0;
         for (int i = 0; i < arr.length; i++) {
