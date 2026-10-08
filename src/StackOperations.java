@@ -6,7 +6,6 @@ public class StackOperations {
         Node(int data) { this.data = data; }
     }
 
-    
     private Node top;
     private int size;
 
