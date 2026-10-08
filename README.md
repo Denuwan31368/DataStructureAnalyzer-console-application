@@ -3,7 +3,7 @@
 **Module:** CIT300 – Data Structures and Algorithms
 **Assessment:** Group Practical Assignment 2 
 
-## Project Description
+## Description
 
 A Java console application that demonstrates the practical application of
 core data structures (array, stack, queue, linked list), searching
