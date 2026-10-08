@@ -3,7 +3,7 @@
 **Module:** CIT300 – Data Structures and Algorithms
 **Assessment:** Group Practical Assignment 2 
 
-## Project Description
+## Description
 
 A Java console application that demonstrates the practical application of
 core data structures (array, stack, queue, linked list), searching
@@ -20,7 +20,7 @@ searching and traversal operations.
 |---|---|---|---|
 | A.M.D.C Pilimathalawwa | 23DA2-0428 | Array and Searching implementation, Performance Comparison, main menu and integration | Implemented `ArrayOperations.java` (insert, delete, search, display with full-array handling), `SearchOperations.java` (Linear and Binary Search with step-counting), `PerformanceComparison.java`, and integrated all components into `MainApp.java`'s menu system. |
 | Hashan Madhura | 23DA2-0313 | Stack and Queue implementation | Implemented `StackOperations.java` (push, pop, peek, display, with empty-stack handling) and `QueueOperations.java` (enqueue, dequeue, peek/front, display, with empty-queue handling). |
-| Chamika Sithum | 23DA2-0056 | Linked List implementation |  |
+| Chamika Sithum | 23DA2-0056 | Linked List implementation | Implemented LinkedListOperations.java (insert, delete, search, display) using a custom singly linked list. |
 | R.M.M.E Rathnayaka | 23DA2-0401 | Graph implementation and traversal | Implemented GraphOperations.java using an adjacency list - add vertex, add edge, display graph, BFS traversal, and DFS traversal, each reporting the number of vertices visited. |
 
 ---
@@ -33,7 +33,7 @@ searching and traversal operations.
   implemented from scratch with custom classes rather than
   `java.util.ArrayList`/`Stack`/`LinkedList`, to demonstrate understanding
   of the underlying mechanics. The graph uses `java.util.Map`/`List` only
-  as the underlying adjacency-list container — the graph logic itself
+  as the underlying adjacency-list container - the graph logic itself
   (add/remove/BFS/DFS) is custom.
 
 ---
