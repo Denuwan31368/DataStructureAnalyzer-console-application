@@ -1,5 +1,4 @@
 import java.util.Arrays;
-
 public class ArrayOperations {
 
     private static final int CAPACITY = 50;
@@ -9,6 +8,7 @@ public class ArrayOperations {
     public boolean isFull() { return size >= CAPACITY; }
     public boolean isEmpty() { return size == 0; }
     public int size() { return size; }
+
 
     public boolean insert(int value) {
         if (isFull()) return false;
