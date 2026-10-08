@@ -33,7 +33,7 @@ searching and traversal operations.
   implemented from scratch with custom classes rather than
   `java.util.ArrayList`/`Stack`/`LinkedList`, to demonstrate understanding
   of the underlying mechanics. The graph uses `java.util.Map`/`List` only
-  as the underlying adjacency-list container — the graph logic itself
+  as the underlying adjacency-list container - the graph logic itself
   (add/remove/BFS/DFS) is custom.
 
 ---
