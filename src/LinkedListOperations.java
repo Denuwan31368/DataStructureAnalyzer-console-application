@@ -1,4 +1,3 @@
-
 public class LinkedListOperations {
 
     private static class Node {
