@@ -11,14 +11,14 @@
 
 ---
 
-## Project Overview
+## Project Description
 
-A unified, console-based Java application that implements, demonstrates, and
-compares fundamental data structures and algorithms. It combines an array,
-stack, queue, and linked list with searching algorithms (linear and binary
-search) and graph traversal (BFS and DFS). Every search and traversal
-reports the number of steps taken and its execution time, and a performance
-comparison table puts the results side by side.
+A Java console application that demonstrates the practical application of
+core data structures (array, stack, queue, linked list), searching
+algorithms (linear and binary search), and graph concepts (adjacency list
+representation with BFS and DFS traversal), along with a performance
+comparison that records and displays step-counts and timing for the
+searching and traversal operations.
 
 
 ---
@@ -67,56 +67,46 @@ missing vertices are all handled with a clear message.
 
 ## Requirements Coverage
 
-| Requirement | Status | Implemented In |
+| Component | Status | Implemented In |
 |---|---|---|
-| A. Array | ✅ Done | `ArrayOperations.java` |
-| B. Stack | ✅ Done | `StackOperations.java` |
-| C. Queue | ✅ Done | `QueueOperations.java` |
-| D. Linked List | ✅ Done | `LinkedListOperations.java` |
-| E. Searching (linear and binary) | ✅ Done | `SearchOperations.java` |
-| F. Graph (BFS and DFS) | ✅ Done | `GraphOperations.java` |
-| Performance / complexity demonstration | ✅ Done | `PerformanceComparison.java` |
-| Integrated console application | ✅ Done | `MainApp.java` |
+| A. Array (insert, delete, search, display) | Done | `ArrayOperations.java` |
+| B. Stack (push, pop, peek, display, empty handling) | Done | `StackOperations.java` |
+| C. Queue (enqueue, dequeue, peek/front, display, empty handling) | Done | `QueueOperations.java` |
+| D. Linked List (insert, delete, search, display) | Done | `LinkedListOperations.java` |
+| E. Searching (Linear Search, Binary Search) | Done | `SearchOperations.java` |
+| F. Graph (add vertex, add edge, display, BFS, DFS) | Done | `GraphOperations.java` |
+| Performance/Complexity Demonstration | Done | `PerformanceComparison.java` |
+| Main console application integration | Done | `MainApp.java` |
+| Input validation / invalid operations / empty structures | Done | Validation helpers throughout `MainApp.java` |
 
 ---
 
-##  Project Structure
+## Project Structure
 
 ```
 DataStructureAnalyzer/
 ├── README.md
 └── src/
-    ├── ArrayOperations.java        # Array: insert, delete, search, display
-    ├── SearchOperations.java       # Linear and binary search with step counts
-    ├── PerformanceComparison.java  # Records and displays the comparison table
-    ├── StackOperations.java        # Stack: push, pop, peek, display
-    ├── QueueOperations.java        # Queue: enqueue, dequeue, peek, display
-    ├── LinkedListOperations.java   # Linked list: insert, delete, search, display
-    ├── GraphOperations.java        # Graph: adjacency list, BFS, DFS
-    └── MainApp.java                # Main menu, submenus, integration, validation
+    ├── ArrayOperations.java        # A.M.D.C Pilimathalawwa - array insert/delete/search/display
+    ├── SearchOperations.java       # A.M.D.C Pilimathalawwa - linear & binary search with step counts
+    ├── PerformanceComparison.java  # A.M.D.C Pilimathalawwa - records & displays performance table
+    ├── StackOperations.java        # Hashan Madhura - stack push/pop/peek/display
+    ├── QueueOperations.java        # Hashan Madhura - queue enqueue/dequeue/peek/display
+    ├── LinkedListOperations.java   # Chamika Sithum - linked list insert/delete/search/display
+    ├── GraphOperations.java        # R.M.M.E Rathnayaka - graph, adjacency list, BFS/DFS
+    └── MainApp.java                # Shared - main menu, submenus, integration, validation
 ```
-
----
-
-### Main menu
-
-```
-1. Array Operations
-2. Stack Operations
-3. Queue Operations
-4. Linked List Operations
-5. Searching Operations
-6. Graph Operations
-7. Performance Comparison
-8. Display All Results
-9. Exit
-```
-
----
-
 ## GitHub Collaboration
 
-- Each member worked on their own feature branch and committed as each part was completed.
-- Work was merged into `main` through pull requests.
-- The commit history and pull requests show each member's individual contribution.
+- Each member worked on their own feature branch (`feature/array-searching`,
+  `feature/stack-queue`, `feature/linked-list`, `feature/graph`), committing
+  incrementally as each method was completed.
+- Work was merged into `main` via individual Pull Requests, each reviewed
+  by at least one other team member before merging.
+- `MainApp.java` was integrated last, once all four branches were merged,
+  since it depends on every other class.
+- Full commit history is visible under the repository's Commits tab;
+  merged Pull Requests are visible under the Pull requests tab.
+
+---
 
