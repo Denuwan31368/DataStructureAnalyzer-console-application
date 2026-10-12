@@ -9,7 +9,7 @@ public class MainApp {
     private static final SearchOperations searchOps = new SearchOperations();       
     private static final StackOperations stackOps = new StackOperations();         
     private static final QueueOperations queueOps = new QueueOperations(); 
-    private static final LinkedListOperations listOps = new LinkedListOperations();  // Sithum
+    private static final LinkedListOperations listOps = new LinkedListOperations(); 
     private static final GraphOperations graphOps = new GraphOperations();         
     private static final PerformanceComparison performance = new PerformanceComparison(); 
 
@@ -252,10 +252,6 @@ public class MainApp {
             if (choice != 5) pause();
         } while (choice != 5);
     }
-
-    // ============================================================
-    // Sithum PART: Linked List Operations (menu 4)
-    // ============================================================
 
     private static void linkedListMenu() {
         int choice;
