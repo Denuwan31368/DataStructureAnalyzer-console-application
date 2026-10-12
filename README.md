@@ -1,102 +1,131 @@
-# Data Structure and Graph Performance Analyzer
+# Data Structure & Graph Performance Analyzer
 
-**Module:** CIT300 – Data Structures and Algorithms
-**Assessment:** Group Practical Assignment 2 
+> **CIT300: Data Structures & Algorithms — Graded Practical Assignment 2**
+> *Sri Lanka Technology Campus (SLTC)*
 
-## Description
-
-A Java console application that demonstrates the practical application of
-core data structures (array, stack, queue, linked list), searching
-algorithms (linear and binary search), and graph concepts (adjacency list
-representation with BFS and DFS traversal), along with a performance
-comparison that records and displays step-counts and timing for the
-searching and traversal operations.
+![Java](https://img.shields.io/badge/JAVA-F89820?style=for-the-badge&logo=openjdk&logoColor=white)
+![Git](https://img.shields.io/badge/GIT-F05032?style=for-the-badge&logo=git&logoColor=white)
+![Module](https://img.shields.io/badge/MODULE-CIT300-555555?style=for-the-badge)
+![Team](https://img.shields.io/badge/TEAM-GROUP%20XX-0075CA?style=for-the-badge)
+![Status](https://img.shields.io/badge/STATUS-COMPLETED-2EA043?style=for-the-badge)
 
 ---
 
-## Team Members
+## Project Overview
 
-| Student Name | Student ID | Assigned Responsibility | Individual Contribution |
+A unified, console-based Java application that implements, demonstrates, and
+compares fundamental data structures and algorithms. It combines an array,
+stack, queue, and linked list with searching algorithms (linear and binary
+search) and graph traversal (BFS and DFS). Every search and traversal
+reports the number of steps taken and its execution time, and a performance
+comparison table puts the results side by side.
+
+**Scope:** Weeks 1–11 &nbsp;|&nbsp; **Contribution:** 10% of the final module grade
+
+---
+
+##  Engineering Team — Group XX
+
+| Student ID | Full Name | Assigned Responsibility | Individual Contribution |
 |---|---|---|---|
-| A.M.D.C Pilimathalawwa | 23DA2-0428 | Array and Searching implementation, Performance Comparison, main menu and integration | Implemented `ArrayOperations.java` (insert, delete, search, display with full-array handling), `SearchOperations.java` (Linear and Binary Search with step-counting), `PerformanceComparison.java`, and integrated all components into `MainApp.java`'s menu system. |
-| Hashan Madhura | 23DA2-0313 | Stack and Queue implementation | Implemented `StackOperations.java` (push, pop, peek, display, with empty-stack handling) and `QueueOperations.java` (enqueue, dequeue, peek/front, display, with empty-queue handling). |
-| Chamika Sithum | 23DA2-0056 | Linked List implementation | Implemented LinkedListOperations.java (insert, delete, search, display) using a custom singly linked list. |
-| R.M.M.E Rathnayaka | 23DA2-0401 | Graph implementation and traversal | Implemented GraphOperations.java using an adjacency list - add vertex, add edge, display graph, BFS traversal, and DFS traversal, each reporting the number of vertices visited. |
+| 23DA2-0401 | R.M.M.E Rathnayaka | Array, Searching, Performance Comparison, main menu and integration | • Implemented `ArrayOperations` (insert, delete, search, display, full-array handling)<br>• Implemented `SearchOperations` (linear and binary search with step counting)<br>• Implemented `PerformanceComparison` (records and displays results)<br>• Built `MainApp` and integrated all components into the main menu |
+| 23DA2-0056 | Chamika Sithum | Stack and Queue | • Implemented `StackOperations` (push, pop, peek, display)<br>• Implemented `QueueOperations` (enqueue, dequeue, peek/front, display)<br>• Handled empty-stack and empty-queue conditions<br>• Integrated both into the main application |
+| 23DA2-0428 | A.M.D.C Pilimathalawwa | Linked List | • Implemented `LinkedListOperations` using a custom singly linked list<br>• Implemented insert, delete, search, and display<br>• Tested edge cases such as deleting a missing value<br>• Integrated the module into the main application |
+| 23DA2-0313 | Hashan Madhura | Graph and traversal | • Implemented `GraphOperations` using an adjacency list<br>• Implemented add vertex, add edge, and display graph<br>• Implemented BFS and DFS traversal with step counting<br>• Integrated the graph module into the main application |
 
 ---
 
 ## Technologies Used
 
-- **Language:** Java (JDK 11+)
-- **Interface:** Console-based (`java.util.Scanner`)
-- All core data structures (array, stack, queue, linked list) are
-  implemented from scratch with custom classes rather than
-  `java.util.ArrayList`/`Stack`/`LinkedList`, to demonstrate understanding
-  of the underlying mechanics. The graph uses `java.util.Map`/`List` only
-  as the underlying adjacency-list container - the graph logic itself
-  (add/remove/BFS/DFS) is custom.
+- **Language:** Java (JDK 11 or newer)
+- **Interface:** Console-based, using `java.util.Scanner`
+- **Data structures:** the array, stack, queue, and linked list are implemented
+  from scratch with custom classes, not `java.util.ArrayList`, `Stack`, or
+  `LinkedList`. The graph uses `java.util.Map` and `List` only as the adjacency-list
+  container; the graph logic (add vertex, add edge, BFS, DFS) is custom.
+- **Version control:** Git and GitHub, with feature branches and pull requests
 
 ---
 
 ## Main System Features
 
-- **Array Operations:** insert, delete, search, display (fixed-capacity array with full-array handling).
-- **Stack Operations:** push, pop, peek, display (handles popping from an empty stack).
-- **Queue Operations:** enqueue, dequeue, peek/front, display (handles dequeuing from an empty queue).
-- **Linked List Operations:** insert, delete, search, display.
-- **Searching Operations:** Linear Search and Binary Search over the array's data, each reporting steps taken and execution time.
-- **Graph Operations:** add vertex, add edge, display graph, BFS traversal, DFS traversal, each reporting vertices visited and execution time.
-- **Performance Comparison:** a single table comparing Linear vs Binary Search and BFS vs DFS by steps and time, with a short explanation of why the results differ.
-- **Display All Results:** shows the current state of every data structure at once.
-- Full input validation and graceful handling of invalid menu choices, empty structures, and duplicate vertices/edges.
+| Component | Operations |
+|---|---|
+| **Array** | Insert, delete, search, display, full-array handling |
+| **Stack** | Push, pop, peek, display, empty-stack handling |
+| **Queue** | Enqueue, dequeue, peek/front, display, empty-queue handling |
+| **Linked List** | Insert, delete, search, display |
+| **Searching** | Linear search and binary search, each reporting steps and time |
+| **Graph** | Add vertex, add edge, display graph, BFS traversal, DFS traversal |
+| **Performance Comparison** | Table of the latest search and traversal results, with an explanation of why they differ |
+| **Display All Results** | Shows the current state of every data structure at once |
+
+Input validation is built in throughout: invalid menu choices, non-numeric
+input, empty structures, full array, duplicate vertices, missing values and
+missing vertices are all handled with a clear message.
 
 ---
 
 ## Requirements Coverage
 
-| Component | Status | Implemented In |
+| Requirement | Status | Implemented In |
 |---|---|---|
-| A. Array (insert, delete, search, display) | Done | `ArrayOperations.java` |
-| B. Stack (push, pop, peek, display, empty handling) | Done | `StackOperations.java` |
-| C. Queue (enqueue, dequeue, peek/front, display, empty handling) | Done | `QueueOperations.java` |
-| D. Linked List (insert, delete, search, display) | Done | `LinkedListOperations.java` |
-| E. Searching (Linear Search, Binary Search) | Done | `SearchOperations.java` |
-| F. Graph (add vertex, add edge, display, BFS, DFS) | Done | `GraphOperations.java` |
-| Performance/Complexity Demonstration | Done | `PerformanceComparison.java` |
-| Main console application integration | Done | `MainApp.java` |
-| Input validation / invalid operations / empty structures | Done | Validation helpers throughout `MainApp.java` |
+| A. Array | ✅ Done | `ArrayOperations.java` |
+| B. Stack | ✅ Done | `StackOperations.java` |
+| C. Queue | ✅ Done | `QueueOperations.java` |
+| D. Linked List | ✅ Done | `LinkedListOperations.java` |
+| E. Searching (linear and binary) | ✅ Done | `SearchOperations.java` |
+| F. Graph (BFS and DFS) | ✅ Done | `GraphOperations.java` |
+| Performance / complexity demonstration | ✅ Done | `PerformanceComparison.java` |
+| Integrated console application | ✅ Done | `MainApp.java` |
 
 ---
 
-## Project Structure
+##  Project Structure
 
 ```
 DataStructureAnalyzer/
 ├── README.md
 └── src/
-    ├── ArrayOperations.java        # A.M.D.C Pilimathalawwa - array insert/delete/search/display
-    ├── SearchOperations.java       # A.M.D.C Pilimathalawwa - linear & binary search with step counts
-    ├── PerformanceComparison.java  # A.M.D.C Pilimathalawwa - records & displays performance table
-    ├── StackOperations.java        # Hashan Madhura - stack push/pop/peek/display
-    ├── QueueOperations.java        # Hashan Madhura - queue enqueue/dequeue/peek/display
-    ├── LinkedListOperations.java   # Chamika Sithum - linked list insert/delete/search/display
-    ├── GraphOperations.java        # R.M.M.E Rathnayaka - graph, adjacency list, BFS/DFS
-    └── MainApp.java                # Shared - main menu, submenus, integration, validation
+    ├── ArrayOperations.java        # Array: insert, delete, search, display
+    ├── SearchOperations.java       # Linear and binary search with step counts
+    ├── PerformanceComparison.java  # Records and displays the comparison table
+    ├── StackOperations.java        # Stack: push, pop, peek, display
+    ├── QueueOperations.java        # Queue: enqueue, dequeue, peek, display
+    ├── LinkedListOperations.java   # Linked list: insert, delete, search, display
+    ├── GraphOperations.java        # Graph: adjacency list, BFS, DFS
+    └── MainApp.java                # Main menu, submenus, integration, validation
 ```
 
 ---
 
+### Main menu
 
-## GitHub Collaboration
-
-- Each member worked on their own feature branch (`feature/array-searching`,
-  `feature/stack-queue`, `feature/linked-list`, `feature/graph`), committing
-  incrementally as each method was completed.
-- Work was merged into `main` via individual Pull Requests, each reviewed
-  by at least one other team member before merging.
-- `MainApp.java` was integrated last, once all four branches were merged,
-  since it depends on every other class.
-- Full commit history is visible under the repository's Commits tab;
-  merged Pull Requests are visible under the Pull requests tab.
+```
+1. Array Operations
+2. Stack Operations
+3. Queue Operations
+4. Linked List Operations
+5. Searching Operations
+6. Graph Operations
+7. Performance Comparison
+8. Display All Results
+9. Exit
+```
 
 ---
+
+## 🤝 GitHub Collaboration
+
+- Each member worked on their own feature branch and committed as each part was completed.
+- Work was merged into `main` through pull requests.
+- The commit history and pull requests show each member's individual contribution.
+
+---
+##  Demonstration Video
+
+A single merged video of under 15 minutes demonstrates the whole system. Each
+member's face is visible throughout their own section, which covers their
+introduction, responsibility, code, live demonstration, an explanation of the
+data structure or algorithm and its complexity, and how it fits into the
+complete system.
