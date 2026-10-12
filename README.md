@@ -6,7 +6,7 @@
 ![Java](https://img.shields.io/badge/JAVA-F89820?style=for-the-badge&logo=openjdk&logoColor=white)
 ![Git](https://img.shields.io/badge/GIT-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![Module](https://img.shields.io/badge/MODULE-CIT300-555555?style=for-the-badge)
-![Team](https://img.shields.io/badge/TEAM-GROUP%12-0075CA?style=for-the-badge)
+![Team](https://img.shields.io/badge/TEAM-GROUP%2012-0075CA?style=for-the-badge)
 ![Status](https://img.shields.io/badge/STATUS-COMPLETED-2EA043?style=for-the-badge)
 
 ---
@@ -115,7 +115,7 @@ DataStructureAnalyzer/
 
 ---
 
-## 🤝 GitHub Collaboration
+## GitHub Collaboration
 
 - Each member worked on their own feature branch and committed as each part was completed.
 - Work was merged into `main` through pull requests.
